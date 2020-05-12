@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<title>Matthew Thien Lab 1</title>
+<script>
+	function makeBar (context, text, x, y, color, rectX, rectY, rectWidth, rectHeight) {
+		context.fillText(text, x, y);
+		context.fillStyle = color;
+		context.fillRect(rectX, rectY, rectWidth, rectHeight);
+		context.fillStyle = "black"; 
+	}
+	
+	function makeBarGraph () {
+    	var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+		var fruits = [{name: "Apple", quantity:20, color:"red"}, 
+        	{name: "Orange", quantity: 10, color:"orange"},
+            {name: "Banana", quantity: 15, color:"yellow"}, 
+            {name: "Kiwi", quantity: 3, color:"green"}, 
+            {name: "Blueberry", quantity: 5, color:"blue"},
+            {name: "Grapes", quantity: 8, color:"purple"}];
+            
+        context.font="15px Calibri";
+        var line = 1;
+        var height = 35; 
+		var y = 20;
+		
+		for(var i = 0; i < fruits.length; i++) {
+			makeBar(context, fruits[i].name, 10, height * (i+1), fruits[i].color, 75, 
+			20+(i*height), fruits[i].quantity*20, 24);
+		}
+		
+		/*context.fillText(fruits[0].name, 10, height*line);
+        context.fillStyle = fruits[0].color;
+        //scale of width is quantity *20
+        context.fillRect(75, 20, fruits[0].quantity*20, 24);
+        context.fillStyle = "black";
+        line++;
+        
+        context.fillText(fruits[1].name, 10, height*line);
+        context.fillStyle = fruits[1].color;
+        context.fillRect(75, 55, fruits[1].quantity*20, 24);
+        context.fillStyle = "black";
+        line++;
+        
+        context.fillText(fruits[2].name, 10, height*line);
+        context.fillStyle = fruits[2].color;
+        context.fillRect(75, 90, fruits[2].quantity*20, 24);
+        context.fillStyle = "black";
+        line++;
+        		
+        context.fillText(fruits[3].name, 10, height*line);
+        context.fillStyle = fruits[3].color;
+        context.fillRect(75, 125, fruits[3].quantity*20, 24);
+        context.fillStyle = "black";
+        line++;
+        
+        context.fillText(fruits[4].name, 10, height*line);
+        context.fillStyle = fruits[4].color;
+        context.fillRect(75, 160, fruits[4].quantity*20, 24);
+        context.fillStyle = "black";
+        line++;
+        
+        context.fillText(fruits[5].name, 10, height*line);
+        context.fillStyle = fruits[5].color;
+        context.fillRect(75, 195, fruits[5].quantity*20, 24);
+        context.fillStyle = "black";*/
+                
+        context.fillText("Matthew Thien", 10, 300);
+
+	}
+    document.addEventListener('DOMContentLoaded', makeBarGraph);
+</script>
+</head>
+<body> 
+	<div id="graphArea">
+		<canvas id="myCanvas" width="800" height="600"></canvas>
+	</div>
+</body>
+</html>
