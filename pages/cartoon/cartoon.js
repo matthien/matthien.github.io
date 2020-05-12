@@ -62,11 +62,11 @@
             	context.drawImage(tentSprite, 50, 370, 300, 200);
             }
             
-            balloonSprite.src = "spr_balloon.png";
-            cloudSprite.src = "cloud.png";
-            sunSprite.src = "sun.png";
-            tentSprite.src = "tent.png";
-            grassSprite.src = "grass.png";
+            balloonSprite.src = "images/spr_balloon.png";
+            cloudSprite.src = "images/cloud.png";
+            sunSprite.src = "images/sun.png";
+            tentSprite.src = "images/tent.png";
+            grassSprite.src = "images/grass.png";
         }    
 
         makeShapes(); //calls commands
