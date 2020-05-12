@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title> Matthew Thien Lab 2 </title>
+<body>
+
+<h1>Lab 2</h1>
+
+<form action="/action_page.php">
+  <label for = "input">Title: </label><br>
+  <input type = "text" id = "title" name = "title" size = 40><br>
+  <label for="textarea">Notes: </label><br>
+  <textarea id="textarea" rows="10" cols="80"></textarea>
+</form>
+
+<p>Matthew Thien</p>
+<script>
+
+	document.getElementById('title').addEventListener("input", updateValue);
+
+	function updateValue(e) {
+		localStorage.setItem("titleInput", e.target.value);
+  	// text is in e.target.value
+   	}
+
+	function onLoad() { 
+		var element = document.getElementById('title');
+		var titleValue=localStorage.getItem("titleInput");
+		element.value = titleValue;
+	}
+
+document.addEventListener('DOMContentLoaded', onLoad);
+
+</script>
+
+</body>
+</html>
