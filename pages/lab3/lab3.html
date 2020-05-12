@@ -16,6 +16,7 @@
 <script>
 
 	document.getElementById('title').addEventListener("input", updateValue);
+	document.getElementById('textarea').addEventListener("textarea", updateValue);
 
 	function updateValue(e) {
 		localStorage.setItem("titleInput", e.target.value);
