@@ -21,7 +21,7 @@ var chart1 = new Chart(g1, {
     options: {
         responsive: false,
         title: { display: true,
-                text: 'Estimated Number of Homeless People'
+                text: 'Estimated Number of Homeless People in NYC'
                 },   
         scales: {
             yAxes: [{
