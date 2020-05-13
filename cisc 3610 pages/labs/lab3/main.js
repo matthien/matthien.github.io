@@ -4,12 +4,12 @@ var oldSave = {
 };
 
 	function storeTitleLocal(e) {
-		oldTitleLocal(e);
+		oldTitleLocal(localStorage.getItem("title"));
 		localStorage.setItem('title', e);
 	};
 	
 	function storeTextLocal(e) { 
-		oldTextLocal(e);
+		oldTextLocal(localStorage.getItem("textarea"));
 		localStorage.setItem('text', e);
 	};
 	
