@@ -25,9 +25,9 @@ var config = {
     
        var tree = this.add.image( 600, 300, 'tree');
        var pear = this.add.image( 50, 450, 'pear').setScale(0.1);
-       var orange = this.add.image( 50, 150, 'orange').setScale(0.1);
+       var orange = this.add.image( 50, 150, 'orange').setScale(0.05);
        var apple = this.add.image( 50, 250, 'apple').setScale(0.1);
-       var peach = this.add.image( 50, 350, 'peach').setScale(0.1);
+       var peach = this.add.image( 50, 350, 'peach').setScale(0.05);
        var cherry = this.add.image( 50, 50, 'cherry').setScale(0.1);
        
       
