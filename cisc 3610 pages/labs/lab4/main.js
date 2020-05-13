@@ -3,7 +3,7 @@ var config = {
         width: 800,
         height: 800,
         backgroundColor: '#efefef',
-        parent: "gameContainer",
+        parent: "game",
         scene: {
             preload: preload,
             create: create,
