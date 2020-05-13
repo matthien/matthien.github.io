@@ -13,7 +13,7 @@ var config = {
     var game = new Phaser.Game(config);
 
     function preload () {
-        this.load.image('pear', 'images/pear.png');
+        this.load.image('pear', 'images/pear.png', );
         this.load.image('orange', 'images/orange.png');
         this.load.image('apple', 'images/apple.png');
         this.load.image('tree', 'images/tree.png');
@@ -22,12 +22,14 @@ var config = {
     }
 
     function create () {
+    
        var tree = this.add.image( 400, 300, 'tree');
-       var pear = this.add.image( 50, 50, 'pear');
+       var pear = this.add.image( 50, 50, 'pear').setScale(0.2);
        var orange = this.add.image( 50, 50, 'orange');
        var apple = this.add.image( 50, 50, 'apple');
        var peach = this.add.image( 50, 50, 'peach');
        var cherry = this.add.image( 50, 50, 'cherry');
+       
       
        //tree.setInteractive();
        pear.setInteractive();
