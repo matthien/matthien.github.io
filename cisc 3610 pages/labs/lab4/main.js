@@ -24,11 +24,11 @@ var config = {
     function create () {
     
        var tree = this.add.image( 400, 300, 'tree');
-       var pear = this.add.image( 50, 50, 'pear').setScale(0.2);
-       var orange = this.add.image( 50, 50, 'orange');
-       var apple = this.add.image( 50, 50, 'apple');
-       var peach = this.add.image( 50, 50, 'peach');
-       var cherry = this.add.image( 50, 50, 'cherry');
+       var pear = this.add.image( 50, 50, 'pear').setScale(0.1);
+       var orange = this.add.image( 50, 50, 'orange').setScale(0.1);
+       var apple = this.add.image( 50, 50, 'apple').setScale(0.1);
+       var peach = this.add.image( 50, 50, 'peach').setScale(0.1);
+       var cherry = this.add.image( 50, 50, 'cherry').setScale(0.1);
        
       
        //tree.setInteractive();
