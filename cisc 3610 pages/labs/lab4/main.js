@@ -29,7 +29,7 @@ var config = {
        var orange = this.add.image( 100, 150, 'orange').setScale(0.05);
        var apple = this.add.image( 100, 250, 'apple').setScale(0.1);
        var peach = this.add.image( 100, 350, 'peach').setScale(0.05);
-       var cherry = this.add.image( 100o, 50, 'cherry').setScale(0.1);
+       var cherry = this.add.image( 100, 50, 'cherry').setScale(0.1);
        
       
        //tree.setInteractive();
