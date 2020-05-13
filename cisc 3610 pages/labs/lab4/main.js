@@ -23,11 +23,11 @@ var config = {
 
     function create () {
        var tree = this.add.image( 400, 300, 'tree');
-       var pear = this.add.image( 50, 450, 'pear');
-       var orange = this.add.image( 50, 150, 'orange');
-       var apple = this.add.image( 50, 250, 'apple');
-       var peach = this.add.image( 50, 350, 'peach');
-       var cherry = this.add.image( 50, 550, 'cherry');
+       var pear = this.add.image( 50, 50, 'pear');
+       var orange = this.add.image( 50, 50, 'orange');
+       var apple = this.add.image( 50, 50, 'apple');
+       var peach = this.add.image( 50, 50, 'peach');
+       var cherry = this.add.image( 50, 50, 'cherry');
       
        //tree.setInteractive();
        pear.setInteractive();
