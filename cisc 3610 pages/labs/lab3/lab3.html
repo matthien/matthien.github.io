@@ -7,31 +7,14 @@
 
 <form action="/action_page.php">
   <label for = "input">Title: </label><br>
-  <input type = "text" id = "title" name = "title" size = 40><br>
+  <input type = "text" id = "titleText" name = "title" size = 40 onInput="storeTitleLocal(this.value)"<br><br><br>
   <label for="textarea">Notes: </label><br>
-  <textarea id="textarea" rows="10" cols="80"></textarea>
+  <textarea id="textarea" rows="10" cols="80" onInput="storeTextLocal(this.value)"></textarea>
 </form>
-
+<script src="main.js"></script>	
+<button type="button" onclick = "undoButton()">Undo</button>
+<button type="button" onclick = "clearButton()">Clear</button>
 <p>Matthew Thien</p>
-<script>
-
-	document.getElementById('title').addEventListener("input", updateValue);
-	document.getElementById('textarea').addEventListener("textarea", updateValue);
-
-	function updateValue(e) {
-		localStorage.setItem("titleInput", e.target.value);
-  	// text is in e.target.value
-   	}
-
-	function onLoad() { 
-		var element = document.getElementById('title');
-		var titleValue=localStorage.getItem("titleInput");
-		element.value = titleValue;
-	}
-
-document.addEventListener('DOMContentLoaded', onLoad);
-
-</script>
 	<div id="homePage">
 		<a href = "https://matthien.github.io/">Back to homepage</a>
 	</div>
