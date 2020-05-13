@@ -4,12 +4,12 @@ var oldSave = {
 };
 
 	function storeTitleLocal(e) {
-		oldTitleLocal(e)
+		oldTitleLocal(e);
 		localStorage.setItem('title', e);
 	};
 	
 	function storeTextLocal(e) { 
-		oldTextLocal(e)
+		oldTextLocal(e);
 		localStorage.setItem('text', e);
 	};
 	
@@ -25,16 +25,16 @@ var oldSave = {
 	
 	function oldTitleLocal(e) { 
 		oldSave.oldTitle = e;
-	}
+	};
 	
 	function oldTextLocal(e) { 
 		oldSave.oldText = e;
-	}
+	};
 	
 	function undoButton() { 
 		document.getElementById("titleText").value = oldSave.oldTitle;
 		document.getElementById("textarea").value = oldSave.oldText;
-	}
+	};
 	
 	function clearButton() { 
 		document.getElementById("titleText").value = " ";
