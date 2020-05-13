@@ -23,7 +23,7 @@ var config = {
 
     function create () {
     
-       var tree = this.add.image( 600, 300, 'tree');
+       var tree = this.add.image( 500, 300, 'tree');
        var pear = this.add.image( 50, 450, 'pear').setScale(0.1);
        var orange = this.add.image( 50, 150, 'orange').setScale(0.05);
        var apple = this.add.image( 50, 250, 'apple').setScale(0.1);
