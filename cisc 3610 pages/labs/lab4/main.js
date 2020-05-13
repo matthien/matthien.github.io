@@ -14,7 +14,7 @@ var game = new Phaser.Game(config);
 
 function preload ()
 {
-    this.load.image('tree', 'images/peach.jpg');
+    this.load.image('tree', 'images/pear.jpg');
 }
 
 function create ()
