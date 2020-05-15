@@ -65,12 +65,12 @@ function changeSize(num){
     if(size < 1){
             var msg = new SpeechSynthesisUtterance();
             msg.text =  "Size too small, the minimize size is 1";
-            synth.speak(msg);
+            speech.speak(msg);
     }
     if(size > 300){
             var msg = new SpeechSynthesisUtterance();
             msg.text =  "Size too big, the size limit is 300";
-            synth.speak(msg);
+            speech.speak(msg);
     }
     else{
     	size = num;
