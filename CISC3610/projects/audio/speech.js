@@ -57,7 +57,7 @@ function changeColor(word){
 
 function backgroundColor(word){
 	bgColor = word;
-	clear();
+	erase();
 	updateBackground();
 };
 
@@ -75,11 +75,11 @@ function changeSize(num){
     }
     else{
     	size = num;
-    	clear();
+    	erase();
     }
 };
 
-function clear(){
+function erase(){
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, ctx.width, ctx.height);
     updateBackground();
