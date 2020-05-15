@@ -12,9 +12,16 @@ ctx.arc(300, 400, 50, 0, 2 * Math.PI);
 ctx.stroke();
 
 var commands = {
-	'color *word': changeColor(word),
-	'background *word': backgroundColor(word),
-	'size *num': changeSize(num),
+	'color *word': function(word) {
+		changeColor(word);
+	},
+	'background *word': function(word) {
+		backgroundColor(word);
+	},
+	'size *num': function(num) {
+		size = parseInt(num);
+		changeSize(size);
+	},
 	'help': function() {
     	var msg = new SpeechSynthesisUtterance();
     	msg.text = "Say color, followed by a color, to set the circle color. \n\
