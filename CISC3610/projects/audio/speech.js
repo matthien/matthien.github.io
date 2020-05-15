@@ -12,8 +12,8 @@ ctx.arc(300, 400, 50, 0, 2 * Math.PI);
 ctx.stroke();
 
 var commands = {
-	'color *color': changeColor,
-	'background *color': backgroundColor,
+	'color *word': changeColor,
+	'background *word': backgroundColor,
 	'size *num': changeSize,
 	'help': function() {
     	var msg = new SpeechSynthesisUtterance();
@@ -43,12 +43,12 @@ function startButton(){
   	//annyang.start();  
 };
 
-function changeColor(color){
+function changeColor(word){
 	color = word;
     clear();
 };
 
-function backgroundColor(color){
+function backgroundColor(word){
 	bgColor = word;
 	clear();
 };
