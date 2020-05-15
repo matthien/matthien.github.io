@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Speech Recognition</title>
+			<meta charset = "utf-8">
+        	<p> INSTRUCTIONS:<br>
+            Press Speak to begin. <br>
+            Say "Color ____" to change the color of the circle. For example "Color Red" to make the circle red.<br>
+            Say "Background ____" to change the background color of the canvas. For example "Background green" to make the background green.<br>
+            Say "Size ____" to change the size of the circle. For example "Size 50" to make the circle with a diameter of 50.<br>
+            Say "Help" to hear these instructions.<br>
+            Say "About" to hear the author and purpose of the program.<br>
+        	</p>
+		</head>
+		<body>
+			<div>
+				<input type ="button" id="speakButton" onclick="startButton()" value="Speak">
+				<canvas id="myCanvas" width="800" height="600"></canvas>
+        		<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+				<script src="speech.js"></script>
+			</div>
+			<div id="homePage">
+				<a href = "https://matthien.github.io/">Back to homepage</a>
+			</div>
+	
+	</html>
