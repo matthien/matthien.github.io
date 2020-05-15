@@ -31,7 +31,7 @@ var commands = {
 	},
 	'about': function() { 
 	 	var msg = new SpeechSynthesisUtterance();
-  		msg.text =  "Created by Matthew Thien. This program is to show the usage of text to speech and speech recognition";
+  		msg.text =  "This program shows how text to speech and speech recognition works.";
   		speech.speak(msg);
   	}
 };
@@ -65,12 +65,12 @@ function changeSize(num){
    
     if(size < 1){
             var msg = new SpeechSynthesisUtterance();
-            msg.text =  "Size too small, the minimize size is 1";
+            msg.text =  "Size less than 1, pick another one between 1 and 300";
             speech.speak(msg);
     }
     if(size > 300){
             var msg = new SpeechSynthesisUtterance();
-            msg.text =  "Size too big, the size limit is 300";
+            msg.text =  "Size bigger than 300, pick another one between 1 and 300";
             speech.speak(msg);
     }
     else{
@@ -94,6 +94,7 @@ function updateCircle(){
 };
 
 function updateBackground() {
+	ctx.beginPath();
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, ctx.width, ctx.height);
     updateCircle();
