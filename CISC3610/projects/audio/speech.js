@@ -58,6 +58,7 @@ function changeColor(word){
 function backgroundColor(word){
 	bgColor = word;
 	clear();
+	updateBackground();
 };
 
 function changeSize(num){
