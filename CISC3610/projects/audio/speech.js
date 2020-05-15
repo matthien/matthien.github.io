@@ -94,10 +94,7 @@ function updateCircle(){
 };
 
 function updateBackground() {
-    ctx.beginPath();
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, ctx.width, ctx.height);
-    ctx.fill();
-    ctx.stroke();
     updateCircle();
 }
