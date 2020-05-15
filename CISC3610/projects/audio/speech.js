@@ -74,6 +74,7 @@ function changeSize(num){
     }
     else{
     	size = num;
+    	clear();
         updateCircle();
     }
 };
@@ -99,4 +100,4 @@ function updateBackground() {
     ctx.fill();
     ctx.stroke();
     updateCircle();
-};
+}
