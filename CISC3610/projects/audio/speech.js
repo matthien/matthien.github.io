@@ -80,8 +80,7 @@ function changeSize(num){
 };
 
 function erase(){
-    ctx.fillStyle = "white";
-    ctx.fillRect(0, 0, ctx.width, ctx.height);
+    ctx.clearRect(0, 0, ctx.width, ctx.height);
     updateBackground();
 };
 
