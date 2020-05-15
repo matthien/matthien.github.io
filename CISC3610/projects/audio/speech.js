@@ -52,7 +52,7 @@ function startButton(){
 
 function changeColor(word){
 	color = word;
-    clear();
+    updateCircle();
 };
 
 function backgroundColor(word){
@@ -73,26 +73,30 @@ function changeSize(num){
             synth.speak(msg);
     }
     else{
-        clear();
+    	size = num;
+        updateCircle();
     }
 };
 
 function clear(){
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, ctx.width, ctx.height);
-    update();
+    updateBackground();
 };
 
-function update(){
+function updateCircle(){
     ctx.beginPath();
     ctx.fillStyle = color;
     ctx.arc(300, 400, 50, 0, 2 * Math.PI);
     ctx.fill();
     ctx.stroke();
-    
+};
+
+function updateBackground() {}
     ctx.beginPath();
     ctx.fillStyle = bgColor;
     ctx.rect(0, 0, ctx.width, ctx.height);
     ctx.fill();
     ctx.stroke();
-}
+    updateCircle();
+};
