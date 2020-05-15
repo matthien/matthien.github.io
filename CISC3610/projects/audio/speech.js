@@ -8,7 +8,7 @@ var int;
 
 ctx.beginPath();
 ctx.fillStyle = 'black';
-ctx.arc(300, 400, 50, 0, 2 * Math.PI);
+ctx.arc(300, 400, size, 0, 2 * Math.PI);
 ctx.stroke();
 
 var commands = {
@@ -87,7 +87,7 @@ function clear(){
 function updateCircle(){
     ctx.beginPath();
     ctx.fillStyle = color;
-    ctx.arc(300, 400, 50, 0, 2 * Math.PI);
+    ctx.arc(300, 400, size, 0, 2 * Math.PI);
     ctx.fill();
     ctx.stroke();
 };
