@@ -15,8 +15,18 @@ var commands = {
 	'color *color': changeColor,
 	'background *color': bgColor,
 	'size *num': changeSize,
-	'help': function() {},
-	'about': function(){}
+	'help': function() {
+    	var msg = new SpeechSynthesisUtterance();
+    	msg.text = "Say color, followed by a color, to set the circle color. \n\
+    	Say background, followed by a color, to set the background color. \n\
+    	Say size, followed of a number from 1 to 300, to set the diameter of the circle. Say about, to hear about the program.";
+    	synth.speak(msg);
+	},
+	'about': function() { 
+	 	var msg = new SpeechSynthesisUtterance();
+  		msg.text =  "Created by Matthew Thien. This program is to show the usage of text to speech and speech recognition";
+  		synth.speak(msg);
+  	}
 };
 
 annyang.addCommands(commands);
