@@ -85,14 +85,14 @@ function clear(){
 
 function update(){
     ctx.beginPath();
-    ctx.fillStyle = bgColor;
-    ctx.rect(0, 0, ctx.width, ctx.height);
+    ctx.fillStyle = color;
+    ctx.arc(300, 400, 50, 0, 2 * Math.PI);
     ctx.fill();
     ctx.stroke();
     
     ctx.beginPath();
-    ctx.fillstyle = color;
-    ctx.arc(300, 400, size, 0, 2* Math.PI); 
+    ctx.fillStyle = bgColor;
+    ctx.rect(0, 0, ctx.width, ctx.height);
     ctx.fill();
     ctx.stroke();
 }
