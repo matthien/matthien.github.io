@@ -15,8 +15,8 @@ var commands = {
 	'color *word': function(word) {
 		changeColor(word);
 	},
-	'ground *word': function(word) {
-		backgroundColor(word);
+	'ground *color': function(word2) {
+		backgroundColor(word2);
 	},
 	'size *num': function(num) {
 		size = parseInt(num);
@@ -55,8 +55,8 @@ function changeColor(word){
     updateCircle();
 };
 
-function backgroundColor(word){
-	bgColor = word;
+function backgroundColor(word2){
+	bgColor = word2;
 	erase();
 	updateBackground();
 };
