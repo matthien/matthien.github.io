@@ -43,17 +43,17 @@ function startButton(){
   	//annyang.start();  
 };
 
-function changeColor(word){
+function changeColor(color){
 	color = word;
     clear();
 };
 
-function backgroundColor(word){
+function backgroundColor(color){
 	bgColor = word;
 	clear();
 };
 
-function changeSize(size){
+function changeSize(num){
    
     if(size < 1){
             var msg = new SpeechSynthesisUtterance();
@@ -85,7 +85,7 @@ function update(){
     
     ctx.beginPath();
     ctx.fillstyle = color;
-    ctx.arc(400, 300, size, 0, 2* Math.PI); 
+    ctx.arc(300, 400, size, 0, 2* Math.PI); 
     ctx.fill();
     ctx.stroke();
 }
