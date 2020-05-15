@@ -76,7 +76,6 @@ function changeSize(num){
     else{
     	size = num;
     	clear();
-        updateCircle();
     }
 };
 
