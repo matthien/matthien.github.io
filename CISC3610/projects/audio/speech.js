@@ -82,7 +82,6 @@ function changeSize(num){
 function clear(){
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, ctx.width, ctx.height);
-    updateBackground();
 };
 
 function updateCircle(){
