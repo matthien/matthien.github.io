@@ -15,7 +15,7 @@ var commands = {
 	'color *word': function(word) {
 		changeColor(word);
 	},
-	'ground *color': function(word2) {
+	'background *color': function(word2) {
 		backgroundColor(word2);
 	},
 	'size *num': function(num) {
