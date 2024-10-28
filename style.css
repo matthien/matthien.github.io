@@ -1,5 +1,4 @@
-
-#poster-container{
+#posterDiv{
     display: flex;
     justify-content: space-around;
     padding-top: 25px;
@@ -17,15 +16,15 @@
     max-height:700px;
 }
 
-.home-posters{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-posters-text{
-    color: #e6e6e6;
+#banner {
+    font-size: 3em;
+    color: #FFFFFF;
+    background-color: #ae0303;
+    padding: 15px;
+    margin: 20px;
+    border: 5px solid #374d6a;
+    border-radius: 15px;
+    text-align:center;
 }
 
 header {
@@ -71,7 +70,7 @@ th {
 
 td { 
     vertical-align: top;
-}
+}s
 
 .title {
     font-weight: bold;
@@ -88,9 +87,4 @@ td {
 
 .actordiv{
     max-width: 50vw;
-}
-
-.attribution{
-    text-align: left;
-    font-size: 10px;
 }
